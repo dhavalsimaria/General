@@ -50,4 +50,20 @@ public class BestTimeBuySell {
 		}
 		return result;
 	}
+	
+	//DP solution
+	/*
+	 * public static int compareStocks(int[] stockArr) { if(stockArr == null ||
+	 * stockArr.length <= 1) { return 0; }
+	 * 
+	 * int profit[] = new int[stockArr.length]; int min = stockArr[0]; //First value
+	 * in stockArr
+	 * 
+	 * for(int i=0; i < profit.length; i++) { profit[i] = 0; }
+	 * 
+	 * for(int k = 1; k < stockArr.length; k++) { min = Math.min(min, stockArr[k]);
+	 * profit[k] = Math.max(profit[k-1], stockArr[k] - min);
+	 * 
+	 * } return profit[stockArr.length-1]; }
+	 */
 }
